@@ -47,7 +47,7 @@ const handleAnswerClick =(selectedAnswer)=>{
  
 }
 
-return(<div className='d-flex flex-column'>
+return(<div className='d-flex flex-column p-4'>
     <div className='mt-3 d-flex flex-column mt-5 align-items-center'>
       <Typography variant="subtitle1" className='text-uppercase'>
          Take the quiz

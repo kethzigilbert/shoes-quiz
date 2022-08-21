@@ -1,5 +1,5 @@
 import { Button, Paper, Typography } from "@mui/material"
-import startRun from './../../assets/start_run.png'
+import startRun from './../../assets/img/png/start_run.png'
 
 import { useNavigate } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
     const navigate = useNavigate();
 
     return(
-       <div className="d-flex flex-column justify-content-center h-100">
+       <div className="d-flex flex-column justify-content-center h-100 p-4">
         <Typography variant="h6" style={{fontWeight:'550'}}>
          Take the quiz
         </Typography>

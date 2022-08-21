@@ -101,6 +101,7 @@ export default function PersistentDrawerLeft(props) {
         sx={{
           width: drawerWidth,
           flexShrink: 0,
+          height:'100vh',
           '& .MuiDrawer-paper': {
             width: drawerWidth,
             boxSizing: 'border-box',
@@ -141,11 +142,11 @@ export default function PersistentDrawerLeft(props) {
             </ListItem>
           ))}
         </List>
-      </Drawer>
-      <Main open={open}>
-        <DrawerHeader />
+    </Drawer>
+     <Main open={open} className="p-0"> 
+        <DrawerHeader /> 
         {children}
-      </Main>
-    </Box>
+      </Main> 
+     </Box>
   );
 }
