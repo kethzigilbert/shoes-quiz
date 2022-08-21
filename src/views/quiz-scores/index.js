@@ -20,7 +20,6 @@ const QuizScores = () => {
 
 
     const getresultShoe = (totalScores) => {
-        console.log("totalScores", totalScores)
         const reccommendedShoe = Object.keys(totalScores).reduce((a, b) => totalScores[a]?.rating > totalScores[b]?.rating ? a : b);
         return reccommendedShoe
 

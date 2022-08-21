@@ -4,7 +4,7 @@ const useImage = (fileName,type='png') => {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
     const [image, setImage] = useState(null)
-console.log(image) 
+
     useEffect(() => {
         const fetchImage = async () => {
             try {
@@ -18,7 +18,7 @@ console.log(image)
         }
 
         fetchImage()
-    }, [fileName])
+    }, [fileName,type])
 
     return {
         loading,
