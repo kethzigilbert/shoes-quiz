@@ -1,4 +1,4 @@
-import { Button, Paper, Typography } from "@mui/material"
+import { Button, Typography } from "@mui/material"
 import startRun from './../../assets/img/png/start_run.png'
 
 import { useNavigate } from 'react-router-dom';
@@ -9,19 +9,19 @@ import { useNavigate } from 'react-router-dom';
     const navigate = useNavigate();
 
     return(
-       <div className="d-flex flex-column justify-content-center h-100 p-4">
-        <Typography variant="h6" style={{fontWeight:'550'}}>
+       <div className="d-flex flex-column h-100 mt-5 pt-5 p-4">
+        <Typography variant="h6" style={{fontWeight:'medium'}}>
          Take the quiz
         </Typography>
-        <Typography variant="h6" style={{fontWeight:'550'}}>
+        <Typography variant="h6" style={{fontWeight:'medium'}}>
          and try your first pair!
         </Typography>
-        <Button variant="contained" onClick={()=>navigate('/quiz')} className="col-5 my-2" color="primary">Try on Trial</Button>
-        <div className="d-flex flex-row col-12">
-        <Typography variant="body2" color="text.secondary" className="col-5" style={{fontWeight:'bold'}}>
+        <Button variant="contained" onClick={()=>navigate('/quiz')} className="col-6 my-2" color="primary">Try on Trial</Button>
+        <div className="d-flex h-100 flex-row col-12">
+        <Typography variant="caption" color="text.secondary" className="col-4" style={{fontWeight:'bold'}}>
          30 Days risk free
         </Typography>
-        <img src={startRun} className="img-fluid col-7" alt="asd"/>
+        <img src={startRun} className="img-fluid col-8 fade-in-image" alt="asd"/>
         </div>
         </div>
     )

@@ -1,10 +1,11 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {INPUT_DATA} from './../../constants/input-data'
 import  groupBy  from 'lodash/groupBy';
-import { Button, Typography } from '@mui/material';
+import { Box, Button, Paper, Typography } from '@mui/material';
 import { cloneDeep, isEmpty } from 'lodash';
 import { useNavigate } from 'react-router-dom';
 
+    
 const QuizQuestion =() =>{
 const [currentQuestion ,setCurrentQuestion] = useState({})
 const [scores , setScores ] = useState({})
@@ -47,17 +48,17 @@ const handleAnswerClick =(selectedAnswer)=>{
  
 }
 
-return(<div className='d-flex flex-column p-4'>
-    <div className='mt-3 d-flex flex-column mt-5 align-items-center'>
-      <Typography variant="subtitle1" className='text-uppercase'>
+return(<Box className='d-flex flex-column h-100 p-4'  sx={{backgroundColor : "background.darkgrey"}}>
+    <div className='d-flex flex-column  align-items-center'>
+      <Typography variant="caption" className='text-uppercase' color="text.white">
          Take the quiz
         </Typography>
-        <Typography variant="subtitle1" className='text-uppercase'>
-         and try your first pair!
+        <Typography variant="caption" className='text-uppercase' color="text.white">
+         30 days risk free
          </Typography>
    </div>
    <div className='mt-3 d-flex flex-column mt-5 justify-content-around align-items-center'>
-      <Typography variant="subtitle1" >
+      <Typography variant="body1" color="text.white">
         {currentQuestion?.copy || ''}
     </Typography>
     <div className='d-flex col-12 flex-row justify-content-between mt-3'>
@@ -66,14 +67,14 @@ return(<div className='d-flex flex-column p-4'>
          
     const {copy}  = eachAnswer
     return (
-        <Button variant="outlined" onClick={()=>handleAnswerClick(eachAnswer)} className="col-5 my-2" >{copy}</Button>
+        <Button variant="outlined" onClick={()=>handleAnswerClick(eachAnswer)} color="white" className="col-5 my-2" >{copy}</Button>
      )
 })}
     </div>
   
        
    </div>
-</div>)
+</Box>)
 
 }
 export default QuizQuestion

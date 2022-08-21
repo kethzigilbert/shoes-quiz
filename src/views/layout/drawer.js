@@ -18,7 +18,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-
+import logo from './../../assets/img/png/logo.png'
 const drawerWidth = 240;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({ theme, open }) => ({
@@ -78,13 +78,18 @@ export default function PersistentDrawerLeft(props) {
     setOpen(false);
   };
 
+  const DrawerOptions = [{
+
+  },{
+
+  }] 
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
-        <Toolbar>
+      <AppBar position="fixed" open={open} sx={{backgroundColor : "background.paper"}}>
+        <Toolbar className='d-flex col-12 justify-content-between flex-row'>
           <IconButton
-            color="inherit"
+            color="secondary"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
@@ -92,9 +97,9 @@ export default function PersistentDrawerLeft(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Persistent drawer
-          </Typography>
+          <div className='d-flex flex-row col-7 '>
+          <img src={logo} width="50px" height= "50px" className="img-fluid" alt="loading"/>
+          </div>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -143,7 +148,7 @@ export default function PersistentDrawerLeft(props) {
           ))}
         </List>
     </Drawer>
-     <Main open={open} className="p-0"> 
+     <Main open={open} className="p-0 container-fluid"> 
         <DrawerHeader /> 
         {children}
       </Main> 
