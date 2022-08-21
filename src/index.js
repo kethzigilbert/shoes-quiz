@@ -5,12 +5,27 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import DrawerLayout from  './views/layout/drawer'
+import { BrowserRouter } from 'react-router-dom';
+import { createTheme, ThemeProvider } from '@mui/material';
+
+const theme = createTheme({
+  typography: {
+    button: {
+      textTransform: "none"
+    }
+  }
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <DrawerLayout>
-    <App />
+     <ThemeProvider theme={theme}>
+   <BrowserRouter>
+     <DrawerLayout>
+      <App />
     </DrawerLayout>
+  </BrowserRouter>
+  </ThemeProvider>
   </React.StrictMode>
 );
 
