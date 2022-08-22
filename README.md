@@ -22,3 +22,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 * common reusable visual components are present in the 'src/common' folder
 * Different views are seperated and its associated components are placed within 'src/views/' folder
 * different reusable utility functions are present in 'src/utils' folder
+
+
+## Layouts
+
+![Start Screen](./src//assets/img/png/home_Screen.png)
+
+![Quiz Screen](./src//assets/img/png/Quiz_screen.png)
+
+![Result Screen](./src//assets/img/png/result_screen.png)
+
+![Loading Screen](./src//assets/img/png/loading_screen.png)
