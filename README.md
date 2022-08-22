@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Runners Shoes Quiz 
 
 This project comprises of a small quiz for runners to find their perfect shoe. This project looks best on a mobile device.
 It is currently live on [https://shoes-quiz.vercel.app/]
