@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
     const navigate = useNavigate();
 
     return(
-       <div className="d-flex flex-column h-100 mt-5 pt-5 p-4">
+       <div className="d-flex flex-column h-100 mt-5  p-4">
         <Typography variant="h6" style={{fontWeight:'medium'}}>
          Take the quiz
         </Typography>

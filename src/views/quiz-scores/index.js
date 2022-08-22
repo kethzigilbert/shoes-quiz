@@ -30,7 +30,7 @@ const QuizScores = () => {
         const calculatePromise = new Promise(resolve => {
             setTimeout(() => {
                 resolve(getresultShoe(totalScores));
-            }, 300);
+            }, 2000);
         });
 
 

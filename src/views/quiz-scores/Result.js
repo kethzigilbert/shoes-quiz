@@ -23,7 +23,7 @@ const Result = (props) => {
                 Based on your selection we've decided on the {shoeName}! Enjoy the 30 day trial!
             </Typography>
            <ShoeCard loadingImage={loadingImage} shoeName={shoeName} resultShoeImage={resultShoeImage}/>
-            <Button className="mt-2 align-self-center col-10" variant="contained" color="aqua"> Shop Now</Button>
+            <Button className="mt-3 align-self-center col-10 " variant="contained" color="aqua"> Shop Now</Button>
         </div>
     )
 }
